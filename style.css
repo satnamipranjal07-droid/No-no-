@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+
+    /* Dark gradient background with soft neon lighting */
+    background: radial-gradient(
+        circle at center,
+        rgba(0, 50, 80, 0.4),  /* soft teal-blue glow center */
+        rgba(0, 0, 0, 1)        /* deep black edges */
+    );
+    overflow: hidden;
+}
+
+/* Optional animated neon glow effect behind container */
+body::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(0, 120, 255, 0.2), transparent 70%);
+    animation: pulse 4s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.6; }
+    100% { transform: scale(1.1); opacity: 0.9; }
+}
+
+/* CARD */
+.login-container{
+    width:100%;
+    max-width:430px;
+    background: Black;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* HEADER */
+.login-container {
+    width: 100%;
+    max-width: 430px;
+    background: #000; /* pure black background */
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 
+        0 0 20px #00f,    /* soft blue glow */
+        0 0 40px #00f,    /* medium glow */
+        0 0 80px #00f;    /* strong glow */
+    border: 2px solid #00f; /* optional blue border */
+    color: #0ff; /* text color neon-ish */
+}
+
+/* Optional: neon effect on header inside container */
+.login-header i,
+.login-header h1 {
+    color: #0ff;
+    text-shadow: 
+        0 0 5px #0ff,
+        0 0 10px #0ff,
+        0 0 20px #00f,
+        0 0 40px #00f;
+}
+}
+
+.login-container:hover {
+    box-shadow:
+        0 0 20px rgba(0, 255, 100, 0.8),
+        0 0 40px rgba(0, 255, 100, 0.6),
+        0 0 60px rgba(0, 255, 100, 0.4),
+        0 0 80px rgba(0, 255, 100, 0.2);
+}
+  .login-header {
+    text-align: center; /* center text horizontally */
+    display: flex;
+    flex-direction: column; /* stack icon and title vertically */
+    align-items: center;   /* center them horizontally */
+    justify-content: center; /* optional: center vertically inside header */
+    margin-bottom: 25px;
+}
+
+/* INPUTS */
+.form-group{
+    margin-bottom:22px;
+}
+.form-group label{
+    font-weight:bold;
+    margin-bottom:8px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+.input-wrapper{
+    position:relative;
+}
+.input-wrapper i{
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#666;
+}
+input{
+    width:100%;
+    padding:14px 15px 14px 45px;
+    border-radius:12px;
+    border:2px solid #ddd;
+    font-size:16px;
+    transition:0.3s;
+}
+input:focus{
+    border-color:#4f46e5;
+    background:#fff;
+    outline:none;
+}
+
+/* BUTTONS */
+.get-password-link{
+    display:block;          /* inline → block */
+    width: fit-content;    /* button size content ke hisab se */
+    margin: 10px auto;     /* auto = centre */
+    padding:6px 12px;
+    border-radius:10px;
+    color:white;
+    font-weight:bold;
+    text-decoration:none;
+}
+.get-password-link.youtube{background:#ff0000;}
+.get-password-link.telegram{background:#0088cc;}
+
+.social-buttons{
+    display:flex;
+    justify-content: space-between;
+    margin:25px 0;
+}
+.social-button{
+    width:32%;
+    padding:14px;
+    background:#4f46e5;
+    color:white;
+    text-align:center;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.social-button.telegram{background:#0088cc;}
+.social-button.youtube{background:#ff0000;}
+
+.login-button{
+    width:100%;
+    padding:16px;
+    background:linear-gradient(135deg,#27ae60,#1e8449);
+    color:white;
+    border:none;
+    border-radius:14px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+.login-button:hover{
+    transform:translateY(-2px);
+}
+.login-button:active{
+    transform:scale(0.97);
+}
+
+/* ERROR */
+#error-message{
+    display:none;
+    background:#fee;
+    color:#e74c3c;
+    padding:14px;
+    border-radius:10px;
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:15px;
+} script

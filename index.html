@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IG GMR - Login</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+<div class="login-container">
+
+    <div class="login-header">
+        <i class="fas fa-shield-alt"></i>
+        <h1>IG GMR</h1>
+        <p>Enter your credentials</p>
+    </div>
+
+    <div id="error-message"></div>
+
+    <form id="login-form">
+
+        <!-- YOUTUBE PASSWORD -->
+        <div class="form-group">
+            <label><i class="fab fa-youtube"></i>YouTube Password</label>
+            <div class="input-wrapper">
+                <input type="text" id="yt-password" placeholder="Enter YouTube password">
+                <i class="fas fa-lock"></i>
+            </div>
+            <a class="get-password-link youtube" href="https://youtube.com/@ytglegendgaming?si=7cPL63opbATGD2cD" target="_blank">Get Password</a>
+        </div>
+
+        <!-- TELEGRAM PASSWORD -->
+        <div class="form-group">
+            <label><i class="fab fa-telegram"></i>Telegram Password</label>
+            <div class="input-wrapper">
+                <input type="text" id="tg-password" placeholder="Enter Telegram password">
+                <i class="fas fa-key"></i>
+            </div>
+            <a class="get-password-link telegram" href="https://t.me/kK5ea9GDRoxOWJl" target="_blank">Get Password</a>
+        </div>
+
+        <!-- SOCIAL BUTTONS -->
+        <div class="social-buttons">
+            <a class="social-button" href="https://discord.gg/7PG6MF9wCN">Discord</a>
+            <a class="social-button telegram" href="https://t.me/kK5ea9GDRoxOWJl">Telegram</a>
+            <a class="social-button youtube" href="https://youtube.com/@ytglegendgaming?si=7cPL63opbATGD2cD">YouTube</a>
+        </div>
+
+        <!-- LOGIN -->
+        <button class="login-button" type="submit">Login</button>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
